@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function saltar(){
+	document.write("<br>,<br>,<br>");
+}
+
+
+function imprimir(frase) {
+	document.write(frase)
+	saltar();
+}
+
+function calcularImc(altura,peso) {
+	imc = peso / (altura * altura);
+	return(imc);
+}
+
+var name = "Mario";
+var peso = 73;
+var altura = 1.72;
+imc = peso / (altura * altura);
+
+imprimir("El IMC de "+ name + "es :  " + calcularImc(altura,peso));
+</script>

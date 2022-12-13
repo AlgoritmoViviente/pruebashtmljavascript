@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<H1> TEST: PROMPT AND WRITE DOCUMENT JAVA SCRIPT</H1>
+<script type="text/javascript">
+		function brinco(){
+			document.write("<br>","<br>","<br>");
+		}
+		function imprimir (frase){
+			document.write(frase);
+			brinco();
+		}
+var victorias = parseInt(prompt("ingrese cantidad de victorias"));
+var empates = parseInt(prompt("ingrese cantidad de impates"));
+totalpuntos = victorias * 3 + empates;
+imprimir("Total obtenido: "+ totalpuntos);
+
+if (totalpuntos > 20) {
+	imprimir("Equipo mejor");
+}
+if (totalpuntos < 20) {
+	imprimir("Equipo peor");
+}
+if (totalpuntos == 20) {
+	imprimir("Equipo igual");
+}
+
+
+</script>
+
